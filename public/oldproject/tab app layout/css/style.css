@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+
+*	{
+	margin: 0px;
+	padding: 0px;	
+}
+
+body{
+	background-image:url(../images/purty_wood_@2X.png);
+}
+
+select{
+	float:left;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+h1{
+	float:left;
+	font-size:15px;
+	margin-left:10px;
+	margin-right:10px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#navhold{
+	position:relative;
+	left:253px;
+	top:-125px;
+}
+
+a.navbtn{
+	text-decoration:none;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:14px;
+	float:left;
+	cursor:pointer;
+	margin-right:10p;
+	margin-left:10px;
+	font-weight:bold;
+	z-index:10;
+	color:#FFF;
+}
+
+a.navbtn:hover{
+	color:#C00;
+}
+
+form{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin-right:20px;
+	margin-left:6px;
+	font-weight:bold;
+	font-size:15px;
+}
+
+#center{
+	margin-left:auto;
+	margin-right:auto;	
+	width:612px;
+}
+
+#go{
+	width:55px;
+	cursor:pointer;
+	
+}
+
+#go:hover{
+	opacity: .4;
+	filter: alpha(opacity=.4);
+	}
