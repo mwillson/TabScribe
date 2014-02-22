@@ -3,3 +3,66 @@
 .navbar-fixed-top {
   margin-bottom: 0 !important;
 }
+
+/*body*/
+
+.bod {
+  padding-top: 50px;
+}
+
+/* header */
+header ul {
+  float: right;
+  list-style: none;
+}
+
+header ul li {
+  float: left;
+  margin-left: 10px;
+}
+
+header a {
+  color: #d12828;
+}
+
+header a:hover {
+  color: #222;
+}
+
+.logo {
+  max-height: 30px;
+}
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #999;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
