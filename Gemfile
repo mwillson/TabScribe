@@ -5,7 +5,7 @@ ruby '1.9.3'
 gem 'rails', '3.2.9'
 gem 'bootstrap-sass'
 gem 'nokogiri'
-gem 'resque'
+gem 'resque', require: "resque/server"
 gem 'redis'
 
 # Bundle edge Rails instead:

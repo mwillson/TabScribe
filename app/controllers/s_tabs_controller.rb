@@ -11,8 +11,12 @@ class STabsController < ApplicationController
   end
 
   def create
-    @stab = STab.new(stab_params)
+    hashy = params[:s_tab]
+    hashy[:name] = "Scribed Tab"
+    hashy[:contents] = "hello"
+    @stab = STab.new(hashy)
     if @stab.save
+      Resque.enqueue(TabTranslator, @stab.id)      
       redirect_to @stab
     else
       render 'new'
@@ -22,6 +26,7 @@ class STabsController < ApplicationController
 private
 
   # generate a params hash for a newly created  s_tab
+=begin
   def stab_params
 
     base_url = "http://tabs.ultimate-guitar.com"
@@ -34,5 +39,6 @@ private
     hash[:contents] = doc2.css('pre').first.text
     hash
   end
+=end
 
 end
