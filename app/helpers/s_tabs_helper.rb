@@ -1,0 +1,2 @@
+module STabsHelper
+end

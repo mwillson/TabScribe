@@ -1,4 +1,6 @@
 TabScribe::Application.routes.draw do
+  resources :s_tabs
+
   root :to => 'static_pages#home'
 
   match '/help', to: "static_pages#help", via: 'get'

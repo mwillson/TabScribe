@@ -1,0 +1,11 @@
+<div class="row">
+<div class="span6 offset3">
+<%= form_for(@stab) do |f| %>
+
+  <%= f.label :original_url, "Ultimate Guitar Tab URL" %>
+  <%= f.text_field :original_url %>
+
+  <%= f.submit "Tab Scribe It!", class: "btn btn-large" %>
+<% end %>
+</div>
+</div>
